@@ -41,4 +41,4 @@ public class CurrencyConverter {
         }
         System.out.println("Thank you for using the converter.");
     }
-}
+} 
