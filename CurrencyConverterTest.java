@@ -21,4 +21,4 @@ public class CurrencyConverterTest {
         assertTrue(exception.getMessage().contains("For input string:"));
     }
 } // Test checks if the program throws an illegal Argument Exception when no arguements pass. Verfies the message contains an error
-// testInvalidAmount test checks if a NumberFormatException happens when the numbre isn't in numerics
+// TestInvalidAmount test checks if a NumberFormatException happens when the numbre isn't in numerics
