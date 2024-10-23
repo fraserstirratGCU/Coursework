@@ -4,23 +4,24 @@ import java.text.DecimalFormat;
 public class CurrencyConverter {
 
     public static void main(String[] args) {
+
+        // Validation check
         if (args.length < 2) {
             System.out.println("Error: Please provide an amount and a currency type.");
             return;
         }
 
-        double amount;
+        double amount, dollar, pound, euro;
+        DecimalFormat f = new DecimalFormat("##.##");
+
         try {
             amount = Double.parseDouble(args[0]);
         } catch (NumberFormatException e) {
-            System.out.println("Error: The amount must be a valid number.");
+            System.out.println("Error: Invalid amount. Provide numeric value.");
             return;
         }
 
-        String currency = args[1].toLowerCase();
-        double dollar, pound, euro;
-
-        DecimalFormat f = new DecimalFormat("##.##");
+        String currency = args[1].toLowerCase(); // Convert to lowercase
 
         // For amounts Conversion
         switch (currency) {
@@ -47,7 +48,6 @@ public class CurrencyConverter {
                 break;
             default:
                 System.out.println("Error: Invalid currency type.");
-                return;
         }
         System.out.println("Thank you for using the converter.");
     }
