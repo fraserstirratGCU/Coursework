@@ -37,8 +37,8 @@ public class CurrencyConverterTest {
             System.out.println("Handled error: " + e.getMessage());
         }
 
-        // Test: Valid Conversion - Capitalized
-        System.out.println("Test Case 5: Valid Conversion - Capitalized");
+        // Test: Valid Conversion - Capitalised
+        System.out.println("Test Case 5: Valid Conversion - Capitalised");
         String[] validInputCap = {"100", "Dollars"};
         try {
             CurrencyConverter.main(validInputCap);
@@ -63,6 +63,23 @@ public class CurrencyConverterTest {
         } catch (Exception e) {
             System.out.println("Handled error: " + e.getMessage());
         }
+
+// Tests for 5c) to check conversion rates
+        System.out.println("Task 5(c) Tests: Validating conversion rates for each currency");
+
+        // Test: Conversion from Dollars to Pounds and Euros
+        System.out.println("Test Case 8: Conversion from Dollars");
+        String[] convertFromDollars = {"1", "dollars"};
+        CurrencyConverter.main(convertFromDollars);
+
+        // Test: Conversion from Pounds to Dollars and Euros
+        System.out.println("Test Case 9: Conversion from Pounds");
+        String[] convertFromPounds = {"1", "pounds"};
+        CurrencyConverter.main(convertFromPounds);
+
+        // Test: Conversion from Euros to Dollars and Pounds
+        System.out.println("Test Case 10: Conversion from Euros");
+        String[] convertFromEuros = {"1", "euros"};
+        CurrencyConverter.main(convertFromEuros);
     }
 }
-
