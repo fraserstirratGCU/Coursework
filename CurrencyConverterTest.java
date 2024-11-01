@@ -83,5 +83,4 @@ public class CurrencyConverterTest {
         CurrencyConverter.main(convertFromEuros);
     }
 }
- 
- 
+
