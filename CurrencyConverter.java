@@ -53,5 +53,4 @@ public class CurrencyConverter {
         System.out.println(amount + " " + fromCurrency + " = " + convertedAmount + " " + toCurrency);
     }
 }
-
-
+ 
